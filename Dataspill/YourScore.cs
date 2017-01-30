@@ -8,5 +8,6 @@ namespace Dataspill
 {
     class YourScore
     {
+
     }
 }
