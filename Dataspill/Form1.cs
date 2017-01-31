@@ -117,10 +117,10 @@ namespace Dataspill
             Console.WriteLine("Tick!!");
             Time++;
             TimeSpent.Text = "You've spent: "+ Time.ToString() + " seconds";
-            if (Time == 5 || Time == 15)
+            if (Time % 10 == 0)
             {
                 MoveEnemyBlackSheepOutOfScreen();
-                EnemyBlackSheepTimer.Start();
+                EnemyBlackSheepTimer.Start(); // #BUG // F
             }
         }
 
