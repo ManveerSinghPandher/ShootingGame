@@ -63,19 +63,9 @@ namespace Dataspill.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BlackGirl {
+        internal static System.Drawing.Bitmap BlackSheep {
             get {
-                object obj = ResourceManager.GetObject("BlackGirl", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Fish {
-            get {
-                object obj = ResourceManager.GetObject("Fish", resourceCulture);
+                object obj = ResourceManager.GetObject("BlackSheep", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,46 +103,6 @@ namespace Dataspill.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rkelly {
-            get {
-                object obj = ResourceManager.GetObject("Rkelly", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Shabba {
-            get {
-                object obj = ResourceManager.GetObject("Shabba", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Shabba1 {
-            get {
-                object obj = ResourceManager.GetObject("Shabba1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Shabba2 {
-            get {
-                object obj = ResourceManager.GetObject("Shabba2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Sheep {
             get {
                 object obj = ResourceManager.GetObject("Sheep", resourceCulture);
@@ -173,29 +123,69 @@ namespace Dataspill.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sheephunter {
+            get {
+                object obj = ResourceManager.GetObject("Sheephunter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sheephunter1 {
+            get {
+                object obj = ResourceManager.GetObject("Sheephunter1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sheephunter2 {
+            get {
+                object obj = ResourceManager.GetObject("Sheephunter2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sheephunter3 {
+            get {
+                object obj = ResourceManager.GetObject("Sheephunter3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sheephunter4 {
+            get {
+                object obj = ResourceManager.GetObject("Sheephunter4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sheephunter5 {
+            get {
+                object obj = ResourceManager.GetObject("Sheephunter5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Submarine {
             get {
                 object obj = ResourceManager.GetObject("Submarine", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Trump {
-            get {
-                object obj = ResourceManager.GetObject("Trump", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Trump1 {
-            get {
-                object obj = ResourceManager.GetObject("Trump1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

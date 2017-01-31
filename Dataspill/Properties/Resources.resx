@@ -118,46 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Sheep" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sheep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shabba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shabba1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Submarine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Submarine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shabba2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shabba2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shabba" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shabba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Trump1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Trump1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sheep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sheep1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fish.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BlackGirl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlackGirl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ocean" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ocean.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rkelly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rkelly.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Trump" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Trump.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Missile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Missile1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Missile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Missile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Missile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Missile1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sheephunter5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheephunter5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheephunter1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheephunter1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheep1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheephunter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheephunter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheephunter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheephunter2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheephunter3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheephunter3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ocean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ocean.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheephunter4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheephunter4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Submarine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Submarine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlackSheep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlackSheep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

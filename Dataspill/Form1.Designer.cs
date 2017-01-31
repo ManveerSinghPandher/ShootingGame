@@ -34,13 +34,16 @@
             this.MissileTimer = new System.Windows.Forms.Timer(this.components);
             this.TimeSpentToWin = new System.Windows.Forms.Timer(this.components);
             this.panel = new System.Windows.Forms.Panel();
+            this.EnemyBlackSheep = new System.Windows.Forms.PictureBox();
             this.TimeSpent = new System.Windows.Forms.Label();
             this.RandomNumberOutput = new System.Windows.Forms.Label();
             this.Output = new System.Windows.Forms.Label();
             this.Missile = new System.Windows.Forms.PictureBox();
             this.Enemy = new System.Windows.Forms.PictureBox();
             this.Player = new System.Windows.Forms.PictureBox();
+            this.EnemyBlackSheepTimer = new System.Windows.Forms.Timer(this.components);
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EnemyBlackSheep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Missile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Enemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
@@ -74,6 +77,7 @@
             // 
             this.panel.BackgroundImage = global::Dataspill.Properties.Resources.Ocean;
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel.Controls.Add(this.EnemyBlackSheep);
             this.panel.Controls.Add(this.TimeSpent);
             this.panel.Controls.Add(this.RandomNumberOutput);
             this.panel.Controls.Add(this.Output);
@@ -86,10 +90,19 @@
             this.panel.Size = new System.Drawing.Size(910, 532);
             this.panel.TabIndex = 1;
             // 
+            // EnemyBlackSheep
+            // 
+            this.EnemyBlackSheep.BackgroundImage = global::Dataspill.Properties.Resources.BlackSheep;
+            this.EnemyBlackSheep.Location = new System.Drawing.Point(737, 12);
+            this.EnemyBlackSheep.Name = "EnemyBlackSheep";
+            this.EnemyBlackSheep.Size = new System.Drawing.Size(146, 35);
+            this.EnemyBlackSheep.TabIndex = 7;
+            this.EnemyBlackSheep.TabStop = false;
+            // 
             // TimeSpent
             // 
             this.TimeSpent.AutoSize = true;
-            this.TimeSpent.Location = new System.Drawing.Point(168, 0);
+            this.TimeSpent.Location = new System.Drawing.Point(201, 0);
             this.TimeSpent.Name = "TimeSpent";
             this.TimeSpent.Size = new System.Drawing.Size(124, 13);
             this.TimeSpent.TabIndex = 6;
@@ -98,7 +111,7 @@
             // RandomNumberOutput
             // 
             this.RandomNumberOutput.AutoSize = true;
-            this.RandomNumberOutput.Location = new System.Drawing.Point(358, 0);
+            this.RandomNumberOutput.Location = new System.Drawing.Point(367, 0);
             this.RandomNumberOutput.Name = "RandomNumberOutput";
             this.RandomNumberOutput.Size = new System.Drawing.Size(81, 13);
             this.RandomNumberOutput.TabIndex = 5;
@@ -107,7 +120,7 @@
             // Output
             // 
             this.Output.AutoSize = true;
-            this.Output.Location = new System.Drawing.Point(28, 510);
+            this.Output.Location = new System.Drawing.Point(82, 0);
             this.Output.Name = "Output";
             this.Output.Size = new System.Drawing.Size(80, 13);
             this.Output.TabIndex = 4;
@@ -116,7 +129,7 @@
             // Missile
             // 
             this.Missile.BackColor = System.Drawing.Color.Yellow;
-            this.Missile.Image = global::Dataspill.Properties.Resources.Missile1;
+            this.Missile.Image = global::Dataspill.Properties.Resources.Missile;
             this.Missile.Location = new System.Drawing.Point(151, 187);
             this.Missile.Name = "Missile";
             this.Missile.Size = new System.Drawing.Size(32, 61);
@@ -127,8 +140,8 @@
             // Enemy
             // 
             this.Enemy.BackColor = System.Drawing.Color.Green;
-            this.Enemy.Image = global::Dataspill.Properties.Resources.Sheep1;
-            this.Enemy.Location = new System.Drawing.Point(774, 52);
+            this.Enemy.Image = global::Dataspill.Properties.Resources.Sheep;
+            this.Enemy.Location = new System.Drawing.Point(774, 91);
             this.Enemy.Name = "Enemy";
             this.Enemy.Size = new System.Drawing.Size(109, 69);
             this.Enemy.TabIndex = 2;
@@ -144,6 +157,11 @@
             this.Player.TabIndex = 1;
             this.Player.TabStop = false;
             // 
+            // EnemyBlackSheepTimer
+            // 
+            this.EnemyBlackSheepTimer.Interval = 5;
+            this.EnemyBlackSheepTimer.Tick += new System.EventHandler(this.EnemyBlackSheepTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,11 +170,12 @@
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "SuperDuperGame2000";
+            this.Text = "SheepHunter";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EnemyBlackSheep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Missile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Enemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
@@ -176,6 +195,8 @@
         private System.Windows.Forms.Label RandomNumberOutput;
         private System.Windows.Forms.Timer TimeSpentToWin;
         private System.Windows.Forms.Label TimeSpent;
+        private System.Windows.Forms.PictureBox EnemyBlackSheep;
+        private System.Windows.Forms.Timer EnemyBlackSheepTimer;
     }
 }
 

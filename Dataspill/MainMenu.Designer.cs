@@ -34,19 +34,19 @@
             // 
             // NewGame
             // 
-            this.NewGame.Location = new System.Drawing.Point(169, 175);
+            this.NewGame.Location = new System.Drawing.Point(170, 255);
             this.NewGame.Name = "NewGame";
-            this.NewGame.Size = new System.Drawing.Size(201, 73);
+            this.NewGame.Size = new System.Drawing.Size(113, 51);
             this.NewGame.TabIndex = 0;
-            this.NewGame.Text = "New Game";
+            this.NewGame.Text = "START";
             this.NewGame.UseVisualStyleBackColor = true;
             this.NewGame.Click += new System.EventHandler(this.NewGame_Click);
             // 
             // ShowResults
             // 
-            this.ShowResults.Location = new System.Drawing.Point(169, 296);
+            this.ShowResults.Location = new System.Drawing.Point(1, 255);
             this.ShowResults.Name = "ShowResults";
-            this.ShowResults.Size = new System.Drawing.Size(201, 73);
+            this.ShowResults.Size = new System.Drawing.Size(71, 62);
             this.ShowResults.TabIndex = 1;
             this.ShowResults.Text = "Show All Results";
             this.ShowResults.UseVisualStyleBackColor = true;
@@ -56,11 +56,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 440);
+            this.BackgroundImage = global::Dataspill.Properties.Resources.Sheephunter5;
+            this.ClientSize = new System.Drawing.Size(481, 318);
             this.Controls.Add(this.ShowResults);
             this.Controls.Add(this.NewGame);
             this.Name = "MainMenu";
-            this.Text = "MainMenu";
+            this.Text = "SheepHunter";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
 

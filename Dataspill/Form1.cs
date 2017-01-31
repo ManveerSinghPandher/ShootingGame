@@ -19,13 +19,16 @@ namespace Dataspill
         int BulletSpeed = 10;
         int Speed = 10; // Dette er startvariablen til speeden, første gang. Deklarert utenfor, så den ikke ticker.
         int Count, Time;
-        int AmountOfPointsToWin = 3;
+        int AmountOfPointsToWin = 20;
        
         public Form1()
         {
             InitializeComponent();
             MoveEnemyOutOfScreen();
+            MoveEnemyBlackSheepOutOfScreen();
+            RemoveColorFromLabels();
             RandomNumberOutput.Text = " Current Speed:" + Speed.ToString(); // For å vise farten på den første
+
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -96,11 +99,29 @@ namespace Dataspill
             Enemy.Location = new Point(Enemy.Location.X + 950, Enemy.Location.Y);
         }
 
+        private void MoveEnemyBlackSheepOutOfScreen()
+        { // Denne metoden sparer Visual Studio for RAM, hvor vi slipper å lage New Enemy hele tiden.
+            EnemyBlackSheep.Location = new Point(Enemy.Location.X + 950, Enemy.Location.Y);
+        }
+
+        
+
+        private void EnemyBlackSheepTimer_Tick(object sender, EventArgs e)
+        {
+            EnemyBlackSheep.Location = new Point(EnemyBlackSheep.Location.X - 5, EnemyBlackSheep.Location.Y);
+        }
+
+
         private void TimeSpentToWin_Tick(object sender, EventArgs e) // Kode fra Lasse Bertnzen, stoppeklokke
         {
             Console.WriteLine("Tick!!");
             Time++;
             TimeSpent.Text = "You've spent: "+ Time.ToString() + " seconds";
+            if (Time == 5 || Time == 15)
+            {
+                MoveEnemyBlackSheepOutOfScreen();
+                EnemyBlackSheepTimer.Start();
+            }
         }
 
         private void EnemyTimer_Tick(object sender, EventArgs e)
@@ -117,7 +138,10 @@ namespace Dataspill
                 Count++; // Teller antall gangen kulen har truffet fienden
                 Output.Text = "You score is " + Count.ToString();
                 MoveEnemyOutOfScreen();
+                MissileToStartPosition();
                 NewRandomSpeed();
+                FireBullet = false;
+                Missile.Visible = true;
 
                 if (Count == AmountOfPointsToWin) // Hvis du har nok poeng for å vinne
                 {
@@ -139,14 +163,16 @@ namespace Dataspill
                 Missile.Visible = true; // Gjør kulen synlig 
                 Missile.Location = new Point(Missile.Location.X, Missile.Location.Y - BulletSpeed);  //farten er piksler
             }
-
-            if (Missile.Bounds.IntersectsWith(Enemy.Bounds) || Missile.Bottom <= 0) // Om den kolliderer
+            
+            if (Missile.Bottom <= 0)
             {
-                FireBullet = false; // Kulen flyr ikke lenger, ettersom den kræsjer.
-                Missile.Visible = false;
+                FireBullet = false;
+                Missile.Visible = true;
+                MissileToStartPosition();
             }
+           
         }
-      
+
         private void NewRandomSpeed()
         {
             Random randomNumber = new Random();
@@ -158,5 +184,13 @@ namespace Dataspill
         {
             EnemyTimer.Stop();
         }
+        private void RemoveColorFromLabels()
+        {
+            TimeSpent.BackColor = System.Drawing.Color.Transparent;
+            RandomNumberOutput.BackColor = System.Drawing.Color.Transparent;
+            Output.BackColor = System.Drawing.Color.Transparent;
+
+        }
+       
     }
 }
