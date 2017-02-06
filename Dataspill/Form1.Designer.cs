@@ -159,7 +159,7 @@
             // 
             // EnemyBlackSheepTimer
             // 
-            this.EnemyBlackSheepTimer.Interval = 5;
+            this.EnemyBlackSheepTimer.Interval = 1;
             this.EnemyBlackSheepTimer.Tick += new System.EventHandler(this.EnemyBlackSheepTimer_Tick);
             // 
             // Form1

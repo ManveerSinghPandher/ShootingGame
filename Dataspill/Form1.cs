@@ -20,7 +20,7 @@ namespace Dataspill
         int Speed = 10; // Dette er startvariablen til speeden, første gang. Deklarert utenfor, så den ikke ticker.
         int Count, Time;
         int AmountOfPointsToWin = 20;
-       
+      
         public Form1()
         {
             InitializeComponent();
@@ -36,10 +36,12 @@ namespace Dataspill
             if (e.KeyCode == Keys.Right) // Høyre tastetrykk holdes inne
             {
                 PlayerMovingRight = true;  // Det er sant at vi skal bevege oss til høyre
+                Player.Left -= 5;
             }
             if (e.KeyCode == Keys.Left) // Venstre tastetrykk holdes inne 
             {
                 PlayerMovingLeft = true; // Det er sant at vi skal bevege oss til venstre
+                Player.Left -= 5;
             }
             if (e.KeyCode == Keys.Space)
             {
@@ -108,7 +110,14 @@ namespace Dataspill
 
         private void EnemyBlackSheepTimer_Tick(object sender, EventArgs e)
         {
-            EnemyBlackSheep.Location = new Point(EnemyBlackSheep.Location.X - 5, EnemyBlackSheep.Location.Y);
+            EnemyBlackSheep.Location = new Point(EnemyBlackSheep.Location.X - 20, EnemyBlackSheep.Location.Y);
+            if (Missile.Bounds.IntersectsWith(EnemyBlackSheep.Bounds))
+            {
+                MoveEnemyBlackSheepOutOfScreen();
+                EnemyBlackSheepTimer.Stop();
+                Count = Count + 2;
+                Output.Text = "You score is " + Count.ToString();
+            }
         }
 
 
@@ -130,7 +139,7 @@ namespace Dataspill
             if (Enemy.Right <= 0) //Hvis Venstresiden av fienden er helt til venstre på skjermen
             {
                 MoveEnemyOutOfScreen(); //Flytter x posisjonen til 950, starter om igjen
-                NewRandomSpeed();
+                NewRandomSpeed(); 
             }
 
             if (Missile.Bounds.IntersectsWith(Enemy.Bounds))
@@ -143,13 +152,14 @@ namespace Dataspill
                 FireBullet = false;
                 Missile.Visible = true;
 
-                if (Count == AmountOfPointsToWin) // Hvis du har nok poeng for å vinne
+                if (Count >= AmountOfPointsToWin) // Hvis du har nok poeng for å vinne
                 {
                     StopEnemyMoving();
                     PlayerTimer.Stop();
                     TimeSpentToWin.Stop(); // Stopper timeren som forteller hvor lang tid du har brukt
                     ShowScore showMyResult = new ShowScore(Count, Time); // Videresender poeng og tid til nytt skjema
                     showMyResult.Show(); // Gjør skjemaet synlig
+                    EnemyBlackSheepTimer.Stop(); // Stopper alle svarte sauer
                 }
 
             }
